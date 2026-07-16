@@ -1,0 +1,74 @@
+@import url("colours_pallete.css");
+
+header {
+    width: calc(100% - var(--space-9)*2);
+    background-color: var(--secondary);
+    padding: var(--space-2) var(--space-9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header :is(h1, h2, h3, h4, h5, p){
+    margin: 0;
+}
+
+header :is(h1, h2, h3){
+  font-family: "Bebas Neue", sans-serif !important ;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header img {
+    width: var(--space-6);
+    height: var(--space-6);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: var(--space-6);
+    align-items: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pc_header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mb_header{
+    display: none;
+}
+
+a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .pc_header{
+        display: none;
+    }
+    
+    .mb_header{
+        display: flex;
+    }
+
+    .mb_header button{
+        align-items: center;
+        background-color: transparent;
+        justify-content: center;
+        border: none;
+    }
+
+    .mb_header button img{
+        width: var(--space-7);
+        height: var(--space-7);
+    }
+}
