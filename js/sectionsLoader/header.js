@@ -84,10 +84,13 @@ export function renderHeader(){
     const dropdownBtnImg = document.createElement("img");
     dropdownBtnImg.src="data/images/icons/hamburger.svg";
     dropdownBtn.appendChild(dropdownBtnImg);
+    dropdownBtn.dataset.action = "header_toggle_button";
     
     topSection.appendChild(header_title);
     topSection.appendChild(h_spacer);
     topSection.appendChild(dropdownBtn);
+
+    hamburgerSection.appendChild(ul);
 
     //PHONE VERSION
 

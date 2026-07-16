@@ -9,9 +9,18 @@ export function initAction(){
 
             const action = target.dataset.action;
 
+            switch(action){
+                case "header_toggle_button":
+                    document.querySelector(".hamburger_section").classList.toggle("active");
+                    console.log("activating");
+                    break;
+
+            }
+
             console.log(action);
         }else{
             console.log("Did not find data-action on click");
+            console.log(event.target);
         }
 
 
