@@ -1,6 +1,7 @@
 import { loadCSS } from "../helpers/loadCSS.js";
+import { loadSVG } from "../helpers/loadSVG.js";
 
-export function renderHeader(){
+export async function renderHeader(){
 
     loadCSS("css/header.css");
 
@@ -41,10 +42,21 @@ export function renderHeader(){
     const 
     user_acc = document.createElement("li"),
     user_acc_a = document.createElement("a"),
+    user_acc_txt = document.createElement("p"),
     user_acc_logo = document.createElement("img"),
     shopping_cart = document.createElement("li"),
     shopping_cart_a = document.createElement("a"),
+    shopping_cart_txt = document.createElement("p"),
     shopping_cart_logo = document.createElement("img");
+
+    user_acc_logo.classList.add("only_pc");
+    user_acc_txt.classList.add("only_mobile");
+
+    shopping_cart_logo.classList.add("only_pc");
+    shopping_cart_txt.classList.add("only_mobile");
+
+    user_acc_txt.dataset.translate = "cont_utilizator";
+    shopping_cart_txt.dataset.translate= "cos_de_cumparaturi";
 
     user_acc_logo.src = "data/images/icons/user_acc.svg";
     shopping_cart_logo.src = "data/images/icons/shopping_cart.svg";
@@ -53,7 +65,9 @@ export function renderHeader(){
     shopping_cart_a.href = "?page=cos_cumparaturi";
 
     user_acc_a.appendChild(user_acc_logo);
+    user_acc_a.appendChild(user_acc_txt);
     shopping_cart_a.appendChild(shopping_cart_logo);
+    shopping_cart_a.appendChild(shopping_cart_txt);
 
     user_acc.appendChild(user_acc_a);
     shopping_cart.appendChild(shopping_cart_a);
@@ -81,8 +95,8 @@ export function renderHeader(){
     hamburgerSection.classList = "hamburger_section";
     
     const dropdownBtn = document.createElement("button");
-    const dropdownBtnImg = document.createElement("img");
-    dropdownBtnImg.src="data/images/icons/hamburger.svg";
+    const dropdownBtnImg = await loadSVG("data/images/icons/hamburger.svg", ["hamburger"]);
+
     dropdownBtn.appendChild(dropdownBtnImg);
     dropdownBtn.dataset.action = "header_toggle_button";
     

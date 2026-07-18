@@ -1,14 +1,14 @@
 import { renderHeader } from "../sectionsLoader/header.js";
+import { renderSection1 } from "../sectionsLoader/section_1.js";
 
-export function renderHome(){
 
-    renderHeader();
+export async function renderHome(){
+
+    await renderHeader();
+
+    await renderSection1();
 
     const app = document.getElementById("app");
     
-    app.innerHTML +=`
     
-        <img id="logo_img_with_bg" src="data/images/icons/icon.jpeg" alt="logo_img">
-
-    `
 }

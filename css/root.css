@@ -61,3 +61,15 @@ small {font-size: 0.750rem; /* 12px */}
     margin-left: auto;
     flex: 1;
 }
+
+@media (max-width: 599px) {
+  .only_pc{
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .only_mobile{
+    display: none;
+  }  
+}

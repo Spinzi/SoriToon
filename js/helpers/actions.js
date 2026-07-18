@@ -12,6 +12,7 @@ export function initAction(){
             switch(action){
                 case "header_toggle_button":
                     document.querySelector(".hamburger_section").classList.toggle("active");
+                    document.querySelector(".hamburger").classList.toggle("active");
                     console.log("activating");
                     break;
 

@@ -4,6 +4,24 @@
   --primary: rgb(157, 22, 254);
   --secondary: rgb(254, 124, 217);
   --accent: rgb(254, 72, 139);
+
+  --bg-gradient-1: linear-gradient(
+      135deg,
+      #ffffff,
+      #ecd7ff
+  );
+
+  --bg-gradient-2: linear-gradient(
+      135deg,
+      #f6ebff,
+      #ffd9ef
+  );
+
+  --bg-gradient-3: linear-gradient(
+      135deg,
+      #fff0f8,
+      #f0d8ff
+  );
 }
 :root[data-theme="dark"] {
   --text: rgb(246, 235, 255);
@@ -11,4 +29,22 @@
   --primary: rgb(137, 1, 233);
   --secondary: rgb(131, 1, 94);
   --accent: rgb(183, 1, 68);
+
+  --bg-gradient-1: linear-gradient(
+      135deg,
+      #12061b,
+      #280c3d
+  );
+
+  --bg-gradient-2: linear-gradient(
+      135deg,
+      #1b0826,
+      #3a1030
+  );
+
+  --bg-gradient-3: linear-gradient(
+      135deg,
+      #140818,
+      #35104f
+  );
 }

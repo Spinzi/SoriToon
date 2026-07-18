@@ -29,7 +29,7 @@ ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: var(--space-6);
+    gap: var(--space-3);
     align-items: center;
     font-weight: bold;
     font-size: x-large;
@@ -43,20 +43,71 @@ ul{
     width: 100%;
 }
 
-.pc_header u li a:hover {
-    background-color: var(--accent);
-}
-
 .mb_header{
     display: none;
 }
 
 a{
-    color:var(--text-color);
+    color:var(--text);
     text-decoration: none;
 }
 
+.pc_header ul li a{
+    padding: var(--space-2);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: var(--space-4);
+    background-color: var(--secondary);
+    transition: background-color 0.2s ease-in-out;
+}
 
+.pc_header ul li a:hover{
+    background-color: var(--accent);
+}
+
+/* HAMBURGER SVG SHIT */
+
+.hamburger{
+    width: var(--space-8);
+    height: var(--space-8);
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+
+    transform-origin: center;
+    transform-box: fill-box;
+
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.hamburger line {
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.hamburger.active .top {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .middle {
+    opacity: 0;
+}
+
+.hamburger.active .bottom {
+    transform: translateY(-6px) rotate(-45deg);
+}
 
 @media (max-width: 600px) {
     header{
@@ -120,24 +171,31 @@ a{
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         text-align: justify;
         margin: 0;
-        gap: var(--space-2);
+        gap: 0;
     }
 
     .mb_header .hamburger_section ul li {
         display: flex;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        align-items: left;
         justify-content: center;
         height: var(--space-7);
-        border-radius: var(--space-2);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to right, var(--accent), var(--secondary), var(--secondary)) 1;
     }
 
     .mb_header .hamburger_section ul li a {
-        margin: auto;
-        text-align: center;
-        justify-content: center;
+        margin-right: auto;
+        margin-top: auto;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        justify-content: bottom;
+        display: flex;
+        align-items: flex-end;
     }
 }

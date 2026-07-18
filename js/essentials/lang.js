@@ -13,7 +13,7 @@ export async function loadLanguage(){
         document.querySelectorAll("[data-translate]").forEach((el)=>{
             const translation = result[el.dataset.translate] ?? "Missing translation";
             console.log(el.dataset.translate);
-            el.innerText = translation;
+            el.innerHTML = translation;
         });
 
         console.log(result);
