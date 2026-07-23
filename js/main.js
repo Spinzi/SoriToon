@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     loadCSS("css/colours_pallete.css");
     loadCSS("css/root.css");
     
-    initEssentials();
+    await initEssentials();
     
-    parseRoute();
-    initAction();
-    renderPage();
+    await parseRoute();
+    await initAction();
+    await renderPage();
 
-    loadLanguage();
+    await loadLanguage();
 });

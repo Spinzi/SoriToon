@@ -2,7 +2,7 @@ import { state } from "../variables/state.js";
 
 import { renderHome } from "../pageLoaders/home.js";
 
-export function renderPage(){
+export async function renderPage(){
     switch(state.route.page){
 
         case "home":

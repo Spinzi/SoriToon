@@ -185,6 +185,10 @@
         margin-right: 0;
     }
 
+    .section_1 .tags ul {
+        gap: var(--space-1);
+    }
+
 
     .swiper{
         max-width: 300px;
