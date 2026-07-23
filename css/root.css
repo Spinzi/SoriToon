@@ -23,6 +23,10 @@ html, body {
   overflow-x: hidden;
 }
 
+button, li {
+  font-family: "Roboto", sans-serif;
+}
+
 html, body {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */

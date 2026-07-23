@@ -27,17 +27,17 @@ export async function renderSection1(){
 
     const app = document.getElementById("app");
 
+    //main section_1
+
     const section = document.createElement("section");
     section.classList = "section_1";
 
+    //split into the swiper and the 
+
     const textDiv = document.createElement("div");
-    const imgDiv = document.createElement("div");
+    const swiperDiv = document.createElement("div");
 
-    const text_h = document.createElement("h3");
-    const text_p = document.createElement("p");
-
-    text_h.dataset.translate = "section_1_h";
-    text_p.dataset.translate = "section_1_p";
+    //images zone stuff
 
     const swiper_html = `
     <div class="swiper">
@@ -51,14 +51,35 @@ export async function renderSection1(){
     </div>
     `;
 
+    swiperDiv.innerHTML = swiper_html;
 
-    imgDiv.innerHTML = swiper_html;
 
-    textDiv.appendChild(text_h);
-    textDiv.appendChild(text_p);
+    // text stuff
+    //title
+    //description
+    //buttons
+    //tags
+
+    textDiv.innerHTML = `
+        <h3 data-translate="section_1_h"></h3>
+        <p data-translate="section_1_p"></p>
+        <div class="s_1_buttons">
+        
+            <button data-translate="cumpara"></button>
+            <button data-translate="contact"></button>
+        
+        </div>
+        <div class="tags">
+            <ul>
+            <li data-translate="livrare_1_3_zile"></li>
+            <li data-translate="comunicare_constanta"></li>
+            <li data-translate="personalizabil"></li>
+            </ul>
+        </div>
+    `;
 
     section.appendChild(textDiv);
-    section.appendChild(imgDiv);
+    section.appendChild(swiperDiv);
 
     app.appendChild(section);
 

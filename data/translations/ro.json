@@ -5,7 +5,12 @@
     "contact": "Contact",
     "cont_utilizator": "Cont utilizator",
     "cos_de_cumparaturi": "Cos de cumparaturi",
+    "cumpara":"Cumpără",
 
     "section_1_h":"Tablouri <br><span class=\"heading_colored\">personalizate</span>",
-    "section_1_p":"Tânără creatoare de artă, transform fotografiile tale preferate în tablouri personalizate, realizate cu grijă și pasiune. Fiecare lucrare este creată pentru a păstra vie emoția momentelor speciale."
+    "section_1_p":"Tânără creatoare de artă, transform fotografiile tale preferate în tablouri personalizate, realizate cu grijă și pasiune. Fiecare lucrare este creată pentru a păstra vie emoția momentelor speciale.",
+
+    "livrare_1_3_zile": "Livrare 1–3 zile",
+    "comunicare_constanta": "Comunicare constantă",
+    "personalizabil": "Design personalizat"
 }

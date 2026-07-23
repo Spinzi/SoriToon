@@ -10,5 +10,4 @@ export async function renderHome(){
 
     const app = document.getElementById("app");
     
-    
 }
