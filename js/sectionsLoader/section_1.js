@@ -23,6 +23,8 @@ function get_paintings_list(){
  */
 export async function renderSection1(){
 
+    console.log("Starting section 1...");
+
     loadCSS("css/sections/section_1.css");
 
     const app = document.getElementById("app");
@@ -44,7 +46,6 @@ export async function renderSection1(){
         <div class="swiper-wrapper">
             <!-- Slides -->
             ${get_paintings_list()}
-            ...
         </div>
         <div class="swiper-pagination"></div>
 
@@ -64,7 +65,6 @@ export async function renderSection1(){
         <h3 data-translate="section_1_h"></h3>
         <p data-translate="section_1_p"></p>
         <div class="s_1_buttons">
-        
             <button data-translate="cumpara"></button>
             <button data-translate="contact"></button>
         
@@ -113,4 +113,5 @@ export async function renderSection1(){
         },
     });
 
+    console.log("Finished loading section 1");
 }

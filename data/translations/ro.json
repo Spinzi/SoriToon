@@ -14,7 +14,7 @@
     "comunicare_constanta": "Comunicare constantă",
     "personalizabil": "Design personalizat",
 
-    
+
     "s_2_cat":"Ce pot realiza?",
 
     "cat_1": "Cupluri",
@@ -24,5 +24,7 @@
     "cat_5": "Personaje",
     "cat_6": "Mașini",
     "cat_7": "Cadouri",
-    "cat_8": "Altele"
+    "cat_8": "Altele",
+
+    "s_3_h":"Cum comand?"
 }

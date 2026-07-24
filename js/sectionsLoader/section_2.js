@@ -32,7 +32,6 @@ export async function renderSection2(){
 
     for(const key in cardJSON){
         const el = cardJSON[key];
-        console.log(el);
         
         const card = document.createElement("div");
         
@@ -47,8 +46,6 @@ export async function renderSection2(){
 
     section.appendChild(title);
     section.appendChild(cards);
-
-    console.log(section);
 
     app.appendChild(section);
 

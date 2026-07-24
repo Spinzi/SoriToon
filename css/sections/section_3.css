@@ -1,0 +1,147 @@
+@import url("../colours_pallete.css");
+
+.section_3{
+    background-image: var(--bg-gradient-3);
+    position: relative;
+}
+
+.section_3 > h3{
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+
+.section_3 > div > div {
+    background-color: var(--background);
+    width: calc(100% - var(--space-4)*2 - 4px - var(--space-1));
+    max-width: calc(var(--space-9)*5);
+    padding: var(--space-4);
+    border: var(--space-1) dashed var(--accent);
+    border-radius: var(--space-7);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+}
+
+.section_3 > div > div > h3{
+    font-family: "Dancing Script", 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: var(--space-7);
+    margin: 0;
+    color: var(--accent);
+}
+
+.section_3 > div > .hide{
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+}
+
+.section_3 > div::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 4px;
+    background-color: var(--accent);
+    transform: translateX(-50%);
+}
+
+.section_3 > div > .left{
+    grid-column: 1;
+    margin-left: auto;
+}
+
+.section_3 > div > .center{
+    grid-column: 2;
+
+    width: auto;
+    max-width: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.center span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--background);
+    border: 4px solid var(--accent);
+
+    font-weight: bold;
+    color: var(--accent);
+
+    z-index: 2;
+}
+
+.section_3 > div > .right {
+    grid-column: 3;
+    margin-right: auto;
+}
+
+.section_3 > div {
+    position: relative;
+    display: grid;
+    gap: var(--space-2);
+    grid-template-columns: 1fr 60px 1fr;
+}
+
+@media (max-width: 768px) {
+
+    .section_3 > div {
+        grid-template-columns: 60px 1fr;
+        row-gap: var(--space-4);
+    }
+
+    /* Move the timeline to the left */
+    .section_3 > div::before {
+        left: 30px;
+        transform: none;
+    }
+
+    /* Hide the empty placeholder cards */
+    .section_3 > div > .hide {
+        display: none;
+    }
+
+    /* Every real card goes to column 2 */
+    .section_3 > div > .left,
+    .section_3 > div > .right {
+        grid-column: 2;
+        margin: 0;
+        width: auto;
+        max-width: none;
+    }
+
+    /* Timeline numbers */
+    .section_3 > div > .center {
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .center span {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .section_3 > div > div > h3 {
+        font-size: var(--space-6);
+    }
+}

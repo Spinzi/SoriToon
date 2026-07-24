@@ -21,6 +21,7 @@ html, body {
   font-weight: 400;
   width: 100vw;
   overflow-x: hidden;
+  color: var(--text);
 }
 
 button, li {
@@ -34,7 +35,6 @@ html, body {
 html:-webkit-scrollbar, body::-webkit-scrollbar { 
     display: none;  /* Older Safari and Chromium */
 }
-
 
 h1, h2, h3, h4, h5 {
   font-family: 'Libertinus Serif';
@@ -68,12 +68,12 @@ small {font-size: 0.750rem; /* 12px */}
 
 @media (max-width: 599px) {
   .only_pc{
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 600px) {
   .only_mobile{
-    display: none;
+    display: none !important;
   }  
 }
