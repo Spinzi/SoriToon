@@ -1,0 +1,34 @@
+[
+    {
+        "translation":"cat_1",
+        "svg":"data/images/icons/categories/cuplu.svg"
+    },
+    {
+        "translation":"cat_2",
+        "svg":"data/images/icons/categories/portret.svg"
+    },
+    {
+        "translation":"cat_3",
+        "svg":"data/images/icons/categories/familie.svg"
+    },
+    {
+        "translation":"cat_4",
+        "svg":"data/images/icons/categories/animale.svg"
+    },
+    {
+        "translation":"cat_5",
+        "svg":"data/images/icons/categories/personaje.svg"
+    },
+    {
+        "translation":"cat_6",
+        "svg":"data/images/icons/categories/masini.svg"
+    },
+    {
+        "translation":"cat_7",
+        "svg":"data/images/icons/categories/cadou.svg"
+    },
+    {
+        "translation":"cat_8",
+        "svg":"data/images/icons/categories/altele.svg"
+    }
+]

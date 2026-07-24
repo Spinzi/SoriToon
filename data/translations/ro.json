@@ -12,5 +12,17 @@
 
     "livrare_1_3_zile": "Livrare 1–3 zile",
     "comunicare_constanta": "Comunicare constantă",
-    "personalizabil": "Design personalizat"
+    "personalizabil": "Design personalizat",
+
+    
+    "s_2_cat":"Ce pot realiza?",
+
+    "cat_1": "Cupluri",
+    "cat_2": "Portrete",
+    "cat_3": "Familie",
+    "cat_4": "Animale",
+    "cat_5": "Personaje",
+    "cat_6": "Mașini",
+    "cat_7": "Cadouri",
+    "cat_8": "Altele"
 }

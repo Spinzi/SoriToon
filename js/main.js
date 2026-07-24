@@ -10,8 +10,8 @@ import { initEssentials } from "./essentials/main.js";
 import { loadLanguage } from "./essentials/lang.js";
 
 document.addEventListener("DOMContentLoaded", async ()=>{
-    loadCSS("css/colours_pallete.css");
-    loadCSS("css/root.css");
+    await loadCSS("css/colours_pallete.css");
+    await loadCSS("css/root.css");
     
     await initEssentials();
     

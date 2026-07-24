@@ -6,7 +6,7 @@ export async function renderPage(){
     switch(state.route.page){
 
         case "home":
-            renderHome();
+            await renderHome();
             break;
         default:
 

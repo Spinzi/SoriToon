@@ -1,5 +1,7 @@
 export async function loadLanguage(){
 
+    console.log("Starting loadLanguage in website");
+
     const lang = localStorage.getItem("lang") ?? "ro";
 
     try {
@@ -12,14 +14,12 @@ export async function loadLanguage(){
 
         document.querySelectorAll("[data-translate]").forEach((el)=>{
             const translation = result[el.dataset.translate] ?? "Missing translation";
-            console.log(el.dataset.translate);
             el.innerHTML = translation;
         });
-
-        console.log(result);
 
     } catch (error) {
         console.error(error.message);
     }
 
+    console.log("Finished loadLanguage");
 }

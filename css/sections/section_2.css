@@ -1,0 +1,76 @@
+@import url("../colours_pallete.css");
+
+.section_2{
+    background-image: var(--bg-d-gradient-2) ;
+    width: calc(100% - var(--space-6)*2);
+    padding: var(--space-6);
+}
+
+.section_2 h3{
+    font-size: var(--space-7);
+    margin-top: 0;
+    margin-bottom: var(--space-4);
+    text-align: center;
+}
+
+.section_2 div {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-2);
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section_2 div div{
+    padding: var(--space-2);
+
+    align-items: center;
+
+    background-image: var(--bg-m-gradient-2);
+    min-width: var(--space-9);
+    border: 1px var(--primary) solid;
+    border-radius: var(--space-2);
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+    color: var(--primary);
+
+    transition: 
+        transform 0.25s ease;
+}
+
+.section_2 div div:hover{
+    transform: scale(1.2) rotate(3deg);
+}
+
+.section_2 div div svg{
+    width: var(--space-8);
+    height: var(--space-8);
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .section_2 div {
+        flex-direction: column;
+        max-height: calc(2*var(--space-9));
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .section_2 div div{
+        flex-direction: row;
+        width: calc(100% - 2*var(--space-2) - 2px);
+        min-height: fit-content;
+    }
+    .section_2 div div svg{
+        width: var(--space-6);
+        height: var(--space-6);
+    }
+
+    .section_2 div div:hover{
+        transform: scale(1) rotate(0);
+    }
+}

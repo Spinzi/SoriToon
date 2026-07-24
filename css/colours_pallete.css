@@ -22,6 +22,15 @@
       #fff0f8,
       #f0d8ff
   );
+
+  --bg-m-gradient-1: linear-gradient(135deg, #f2e4ff, #cfa1ff);
+  --bg-m-gradient-2: linear-gradient(135deg, #ffe2f2, #ff9fd0);
+  --bg-m-gradient-3: linear-gradient(135deg, #f8ddff, #b985ff);
+
+  --bg-d-gradient-1: linear-gradient(135deg, #d8b8ff, #9d4cff);
+  --bg-d-gradient-2: linear-gradient(135deg, #ffc0e3, #ff5fae);
+  --bg-d-gradient-3: linear-gradient(135deg, #f0b8ff, #8f4dff);
+
 }
 :root[data-theme="dark"] {
   --text: rgb(246, 235, 255);
@@ -47,4 +56,12 @@
       #140818,
       #35104f
   );
+
+  --bg-m-gradient-1: linear-gradient(135deg, #2a1242, #6830d8);
+  --bg-m-gradient-2: linear-gradient(135deg, #39132d, #ad2c7a);
+  --bg-m-gradient-3: linear-gradient(135deg, #251540, #5b33c8);
+
+  --bg-d-gradient-1: linear-gradient(135deg, #44206d, #8d3dff);
+  --bg-d-gradient-2: linear-gradient(135deg, #5a1d48, #e33b98);
+  --bg-d-gradient-3: linear-gradient(135deg, #38206c, #7040ff);
 }
