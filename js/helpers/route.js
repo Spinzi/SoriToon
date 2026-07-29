@@ -7,5 +7,13 @@ export function parseRoute(){
         page: params.get("page") ?? "home"
     }
 
+    if(!params.get("page")){
+        history.pushState(
+            {},
+            "",
+            "?page=home"
+        )
+    };
+
     console.log(state);
 }

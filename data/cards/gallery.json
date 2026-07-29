@@ -1,0 +1,50 @@
+[
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    },
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    },
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    },
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    },
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    },
+    {
+        "id":"ART001",
+        "title":"titlu_titlu",
+        "description":"descriere_descriere",
+        "category":"cuplu",
+        "image":"data/images/paintings/1.jpeg",
+        "featured": true
+    }
+]

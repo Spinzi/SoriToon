@@ -51,6 +51,9 @@
     box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
 }
 
+.section_3 > div {
+    margin-bottom: var(--space-7);
+}
 
 .section_3 > div > .left{
     grid-column: 1;

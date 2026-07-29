@@ -120,21 +120,21 @@
 
 /* SWIPER */
 
-.swiper{
+.section_1 .swiper{
     width: 100%;
     max-width: 600px;
     aspect-ratio: 6/5;
     overflow: visible;
 }
 
-.swiper-slide{
+.section_1 .swiper-slide{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.swiper-slide img{
+.section_1 .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -143,22 +143,22 @@
     display: block;
 }
 
-.swiper-slide {
+.section_1 .swiper-slide {
     transition: 0.5s;
 }
 
-.swiper-slide-active {
+.section_1 .swiper-slide-active {
     opacity: 1;
     filter: brightness(1);
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
+.section_1 .swiper-slide-prev,
+.section_1 .swiper-slide-next {
     opacity: 0.5;
     filter: brightness(0.7) blur(3px);
 }
 
-.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
+.section_1 .swiper-slide:not(.section_1 .swiper-slide-active):not(.section_1 .swiper-slide-prev):not(.section_1 .swiper-slide-next) {
     opacity: 0.0;
     filter: brightness(0.5);
 }
@@ -190,7 +190,7 @@
     }
 
 
-    .swiper{
+    .section_1 .swiper{
         max-width: 300px;
         margin-top: var(--space-4);
         margin-bottom: var(--space-8);
