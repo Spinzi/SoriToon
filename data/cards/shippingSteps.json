@@ -1,22 +1,22 @@
 [
     {
-        "h":"",
-        "t":""
+        "h":"alege_produsul_h",
+        "p":"alege_produsul_p"
     },
     {
-        "h":"",
-        "t":""
+        "h":"discutam_detaliile_h",
+        "p":"discutam_detaliile_p"
     },
     {
-        "h":"",
-        "t":""
+        "h":"crearea_artei_h",
+        "p":"crearea_artei_p"
     },
     {
-        "h":"",
-        "t":""
+        "h":"primesti_previzualizare_h",
+        "p":"primesti_previzualizare_p"
     },
     {
-        "h":"",
-        "t":""
+        "h":"plata_si_livrare_h",
+        "p":"plata_si_livrare_p"
     }
 ]

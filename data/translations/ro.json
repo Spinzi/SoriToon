@@ -26,5 +26,15 @@
     "cat_7": "Cadouri",
     "cat_8": "Altele",
 
-    "s_3_h":"Cum comand?"
+    "s_3_h":"Cum comand?",
+    "alege_produsul_h": "Alege produsul",
+    "alege_produsul_p": "Alege <b>tipul de tablou</b> și <b>dimensiunea</b> dorită, apoi plasează comanda. Dacă preferi, mă poți contacta direct prin <b>metodele de contact</b>, fără să folosești formularul de pe site.",
+    "discutam_detaliile_h": "Discutăm detaliile",
+    "discutam_detaliile_p": "Îmi trimiți <b>fotografiile</b>, iar împreună stabilim toate detaliile importante, precum <b>fundalul, culorile, textul</b> sau orice alte preferințe.",
+    "crearea_artei_h": "Crearea artei",
+    "crearea_artei_p": "După ce stabilim toate detaliile, <b>încep realizarea tabloului</b> cu atenție la fiecare element.",
+    "primesti_previzualizare_h": "Primești previzualizarea",
+    "primesti_previzualizare_p": "Îți trimit o <b>previzualizare</b> a tabloului pentru aprobare. Dacă dorești <b>mici modificări</b>, le realizez înainte de finalizare.",
+    "plata_si_livrare_h": "Plata și livrarea",
+    "plata_si_livrare_p": "După <b>aprobarea previzualizării</b>, efectuezi plata. Apoi <b>finalizez tabloul</b> și îl expediez conform <b>termenului de livrare stabilit împreună</b>."
 }
