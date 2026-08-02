@@ -12,6 +12,7 @@ import { loadLanguage } from "./essentials/lang.js";
 import { openModal } from "./helpers/modal.js";
 
 document.addEventListener("DOMContentLoaded", async ()=>{
+    const startTime = performance.now();
     await loadCSS("css/colours_pallete.css");
     await loadCSS("css/root.css");
     
@@ -22,5 +23,6 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     await renderPage();
     
     await loadLanguage();
-
+    const endTime = performance.now();
+    console.log(`App loaded in ${(endTime - startTime).toFixed(0)}ms`);
 });
