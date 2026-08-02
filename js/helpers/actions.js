@@ -45,7 +45,7 @@ export async function initAction(){
                 case "openArt":
                     const id = target.dataset.id;
                     const data = await get_cache("data/cards/gallery.json");
-                    const item = data.find(item => item.id = id);
+                    const item = data.find(item => item.id === id);
                     console.log(item);
                     await openModal([
                         {
