@@ -12,6 +12,9 @@
   --space-7: 48px;
   --space-8: 64px;
   --space-9: 96px;
+
+  --loader-accent: #f145f7;
+  --loader-bg: #E5E5F7;
 }
 
 html, body {
@@ -88,4 +91,164 @@ small {font-size: 0.750rem; /* 12px */}
     object-fit: contain;
     max-width: 100vw;
     max-height: 100vh;
+}
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    background: var(--background);
+
+    display: grid;
+    place-items: center;
+}
+
+/* fade-out sequence: plays once, then the element is removed/hidden via JS */
+#loader.hidden {
+    animation: loaderFadeOut .6s cubic-bezier(.4, 0, .2, 1) forwards;
+    pointer-events: none;
+}
+
+@keyframes loaderFadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.04);
+        filter: blur(4px);
+    }
+}
+
+#loader .grid-pattern {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 1;
+
+    position: relative;
+    overflow: hidden;
+    background-color: var(--loader-bg);
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+
+    mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+}
+
+#loader .grid-pattern::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    transform: rotate(320deg);
+    transform-origin: center;
+    background-color: var(--loader-bg);
+    background-image:
+        linear-gradient(30deg, var(--loader-accent) 12%, transparent 12.5%, transparent 87%, var(--loader-accent) 87.5%, var(--loader-accent)),
+        linear-gradient(150deg, var(--loader-accent) 12%, transparent 12.5%, transparent 87%, var(--loader-accent) 87.5%, var(--loader-accent)),
+        linear-gradient(30deg, var(--loader-accent) 12%, transparent 12.5%, transparent 87%, var(--loader-accent) 87.5%, var(--loader-accent)),
+        linear-gradient(150deg, var(--loader-accent) 12%, transparent 12.5%, transparent 87%, var(--loader-accent) 87.5%, var(--loader-accent)),
+        linear-gradient(60deg, color-mix(in srgb, var(--loader-accent) 47%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--loader-accent) 47%, transparent) 75%, color-mix(in srgb, var(--loader-accent) 47%, transparent)),
+        linear-gradient(60deg, color-mix(in srgb, var(--loader-accent) 47%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--loader-accent) 47%, transparent) 75%, color-mix(in srgb, var(--loader-accent) 47%, transparent));
+    background-size: 30px 53px;
+    background-position: 0 0, 0 0, 15px 26px, 15px 26px, 0 0, 15px 26px;
+
+    animation: gridFlow 24s linear infinite;
+    will-change: background-position;
+}
+
+@keyframes gridFlow {
+    to {
+        background-position:
+            30px 53px,
+            30px 53px,
+            45px 79px,
+            45px 79px,
+            30px 53px,
+            45px 79px;
+    }
+}
+
+.loader-wheel {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+
+    pointer-events: none;
+}
+
+.loader-wheel::before {
+    content: "";
+    width: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background: rgba(20, 10, 30, .28);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+}
+
+.ring {
+    position: absolute;
+    width: 80px;
+    aspect-ratio: 1;
+
+    border: 6px solid rgba(255, 255, 255, .2);
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 20px rgba(241, 69, 247, .6),
+        inset 0 0 10px rgba(255, 255, 255, .2);
+
+    animation:
+        spin 1.1s cubic-bezier(.65, 0, .35, 1) infinite,
+        breathe 2.2s ease-in-out infinite;
+    will-change: transform, box-shadow;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes breathe {
+    0%, 100% {
+        scale: 1;
+        box-shadow:
+            0 0 20px rgba(241, 69, 247, .5),
+            inset 0 0 10px rgba(255, 255, 255, .15);
+    }
+    50% {
+        scale: 1.08;
+        box-shadow:
+            0 0 32px rgba(241, 69, 247, .7),
+            inset 0 0 14px rgba(255, 255, 255, .25);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #loader .grid-pattern::before,
+    .ring {
+        animation: none;
+    }
+
+    #loader.hidden {
+        animation: loaderFadeOutReduced .3s ease forwards;
+    }
+
+    @keyframes loaderFadeOutReduced {
+        to { opacity: 0; }
+    }
 }

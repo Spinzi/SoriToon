@@ -9,6 +9,8 @@ import { renderPage } from "./helpers/renderPage.js";
 import { initEssentials } from "./essentials/main.js";
 import { loadLanguage } from "./essentials/lang.js";
 
+import { remove_loader } from "./essentials/loadAnimation.js";
+
 import { openModal } from "./helpers/modal.js";
 
 document.addEventListener("DOMContentLoaded", async ()=>{
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     await renderPage();
     
     await loadLanguage();
+    remove_loader();
     const endTime = performance.now();
     console.log(`App loaded in ${(endTime - startTime).toFixed(0)}ms`);
 });
