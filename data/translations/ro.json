@@ -36,5 +36,8 @@
     "primesti_previzualizare_h": "Primești previzualizarea",
     "primesti_previzualizare_p": "Îți trimit o <b>previzualizare</b> a tabloului pentru aprobare. Dacă dorești <b>mici modificări</b>, le realizez înainte de finalizare.",
     "plata_si_livrare_h": "Plata și livrarea",
-    "plata_si_livrare_p": "După <b>aprobarea previzualizării</b>, efectuezi plata. Apoi <b>finalizez tabloul</b> și îl expediez conform <b>termenului de livrare stabilit împreună</b>."
+    "plata_si_livrare_p": "După <b>aprobarea previzualizării</b>, efectuezi plata. Apoi <b>finalizez tabloul</b> și îl expediez conform <b>termenului de livrare stabilit împreună</b>.",
+
+    "distribuie": "Distribuie",
+    "vezi_in_galerie": "Vezi in galerie"
 }

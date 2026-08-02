@@ -9,6 +9,8 @@ import { renderPage } from "./helpers/renderPage.js";
 import { initEssentials } from "./essentials/main.js";
 import { loadLanguage } from "./essentials/lang.js";
 
+import { openModal } from "./helpers/modal.js";
+
 document.addEventListener("DOMContentLoaded", async ()=>{
     await loadCSS("css/colours_pallete.css");
     await loadCSS("css/root.css");
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     await parseRoute();
     await initAction();
     await renderPage();
-
+    
     await loadLanguage();
+
 });

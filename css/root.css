@@ -77,3 +77,15 @@ small {font-size: 0.750rem; /* 12px */}
     display: none !important;
   }  
 }
+
+.medium-zoom-overlay {
+    z-index: 9998;
+}
+
+.medium-zoom-image--opened {
+    z-index: 9999;
+
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 100vh;
+}

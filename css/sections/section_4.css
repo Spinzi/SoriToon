@@ -1,7 +1,7 @@
 @import url("../colours_pallete.css");
 
 .section_4{
-    background: var(--bg-gradient-1);
+    background: var(--bg-m-gradient-2);
 
     display: flex;
     flex-direction: column;

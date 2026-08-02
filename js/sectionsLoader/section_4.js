@@ -1,4 +1,5 @@
 import { loadCSS } from "../helpers/loadCSS.js";
+import { get_cache } from "../variables/cache.js";
 
 export async function renderSection4(){
     console.log("Starting section 4...");
@@ -14,12 +15,7 @@ export async function renderSection4(){
     title.dataset.translate = "s_4_h";
     const swiper = document.createElement("div");
     
-    const swiper_fetch_data = await fetch("data/cards/gallery.json");
-    if(!swiper_fetch_data.ok){
-        console.error("Could not fetch swiper data.");
-    }
-    
-    const swiper_data_json = await swiper_fetch_data.json();
+    const swiper_data_json = await get_cache("data/cards/gallery.json");
 
     let swiper_data = "";
 
@@ -59,15 +55,6 @@ export async function renderSection4(){
 
 
     app.appendChild(section);
-
-    console.log(swiper);
-console.log(swiper instanceof HTMLElement);
-
-
-    console.log(swiper);
-console.log(swiper.outerHTML);
-console.log(swiper instanceof Element);
-
 
     new Swiper(swiper, {
         slidesPerView: 3,
