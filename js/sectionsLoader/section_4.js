@@ -13,6 +13,11 @@ export async function renderSection4(){
 
     const title = document.createElement("h3");
     title.dataset.translate = "s_4_h";
+    const button = document.createElement("button");
+    button.dataset.translate = "s_4_b"; 
+    button.onclick = () => {
+        window.location.href = "?page=galerie"
+    };
     const swiper = document.createElement("div");
     
     const swiper_data_json = await get_cache("data/cards/gallery.json");
@@ -53,6 +58,7 @@ export async function renderSection4(){
     section.appendChild(title);
     section.appendChild(swiper);
 
+    section.appendChild(button);
 
     app.appendChild(section);
 

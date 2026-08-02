@@ -49,23 +49,15 @@ export async function initAction(){
                     console.log(item);
                     await openModal([
                         {
-                            type:"heading",
-                            translate:item.title
-                        },
-                        {
                             type:"img",
                             src:item.image
-                        },
-                        {
-                            type:"text",
-                            translate:item.description
                         },
                         {
                             type:"buttons",
                             buttons:[
                                 {
                                     translate: "distribuie",
-                                    action: `share-/?page=gallery&id=${item.id}`,
+                                    action: `share-/?page=galerie&id=${item.id}`,
                                 },
                                 {
                                     translate: "vezi_in_galerie",

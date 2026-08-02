@@ -1,50 +1,114 @@
 [
     {
         "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
+        "title":"",
+        "description":"",
+        "category":"",
         "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "featured":true
     },
     {
-        "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
-        "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "id":"ART002",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/2.jpeg",
+        "featured":true
     },
     {
-        "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
-        "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "id":"ART003",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/3.jpeg",
+        "featured":false
     },
     {
-        "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
-        "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "id":"ART004",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/4.jpeg",
+        "featured":true
     },
     {
-        "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
-        "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "id":"ART005",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/5.jpeg",
+        "featured":true
     },
     {
-        "id":"ART001",
-        "title":"titlu_titlu",
-        "description":"descriere_descriere",
-        "category":"cuplu",
-        "image":"data/images/paintings/1.jpeg",
-        "featured": true
+        "id":"ART006",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/6.jpeg",
+        "featured":true
+    },
+    {
+        "id":"ART007",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/7.jpeg",
+        "featured":false
+    },
+    {
+        "id":"ART008",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/8.jpeg",
+        "featured":true
+    },
+    {
+        "id":"ART009",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/9.jpeg",
+        "featured":true
+    },
+    {
+        "id":"ART010",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/10.jpeg",
+        "featured":false
+    },
+    {
+        "id":"ART011",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/11.jpeg",
+        "featured":false
+    },
+    {
+        "id":"ART012",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/12.jpeg",
+        "featured":true
+    },
+    {
+        "id":"ART013",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/13.jpeg",
+        "featured":false
+    },
+    {
+        "id":"ART014",
+        "title":"",
+        "description":"",
+        "category":"",
+        "image":"data/images/paintings/14.jpeg",
+        "featured":true
     }
 ]

@@ -5,7 +5,7 @@ import { renderHome } from "../pageLoaders/home.js";
 export async function renderPage(){
     switch(state.route.page){
 
-        case "home":
+        case "acasa":
             await renderHome();
             break;
         default:

@@ -119,6 +119,27 @@
     filter: blur(2px);
 }
 
+.section_4 > button {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--space-4);
+
+    font-size: x-large;
+    font-weight: normal;
+
+    border: calc(var(--space-1)/2) solid var(--accent);
+    background-image: var(--bg-gradient-1);
+    color: var(--accent);
+    cursor: pointer;
+
+    transition: transform 0.25s ease,
+                font-weight 0.25s ease;
+}
+
+.section_4 > button:hover{
+    font-weight: bold;
+    transform: scale(1.1) rotate(5deg);
+}
+
 /* Phone */
 
 @media (max-width: 600px){

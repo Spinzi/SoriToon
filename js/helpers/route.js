@@ -4,14 +4,14 @@ export function parseRoute(){
     const params = new URLSearchParams(window.location.search);
 
     state.route = {
-        page: params.get("page") ?? "home"
+        page: params.get("page") ?? "acasa"
     }
 
     if(!params.get("page")){
         history.pushState(
             {},
             "",
-            "?page=home"
+            "?page=acasa"
         )
     };
 
