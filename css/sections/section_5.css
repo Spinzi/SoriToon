@@ -35,6 +35,7 @@
 .section_5 p {
     margin: 0;
     font-size: var(--space-6);
+    color: var(--text);
     line-height: 1.5;
 }
 
