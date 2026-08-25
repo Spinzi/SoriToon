@@ -3,6 +3,7 @@ import { renderSection1 } from "../sectionsLoader/section_1.js";
 import { renderSection2 } from "../sectionsLoader/section_2.js";
 import { renderSection3 } from "../sectionsLoader/section_3.js";
 import { renderSection4 } from "../sectionsLoader/section_4.js";
+import { renderSection5 } from "../sectionsLoader/section_5.js";
 
 export async function renderHome(){
 
@@ -15,6 +16,8 @@ export async function renderHome(){
     await renderSection3();
 
     await renderSection4();
+
+    await renderSection5();
 
     const app = document.getElementById("app");
     
