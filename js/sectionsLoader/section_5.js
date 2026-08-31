@@ -1,7 +1,7 @@
 import { loadCSS } from "../helpers/loadCSS.js";
 
 export async function renderSection5(){
-    console.log("Starting section 4...");
+    console.log("Starting section 5...");
     
     await loadCSS("css/sections/section_5.css");
 

@@ -22,6 +22,7 @@ export async function renderHeader(){
 
     const header_title = document.createElement("h1");
     header_title.innerText = "SoriToon";
+    header_title.dataset.action = "goto-/";
 
     const header_links = [
         "cum_comand", "galerie", "cine_sunt", "contact"
@@ -72,8 +73,9 @@ export async function renderHeader(){
     user_acc.appendChild(user_acc_a);
     shopping_cart.appendChild(shopping_cart_a);
 
-    ul.appendChild(user_acc);
-    ul.appendChild(shopping_cart);
+    // TO BE DISABLED UNTIL FURTHER UPDATE WHERE THEY WILL BE ADDED
+    // ul.appendChild(user_acc);
+    // ul.appendChild(shopping_cart);
 
     //PC VERSION
 
