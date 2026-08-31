@@ -5,6 +5,7 @@ import { renderSection3 } from "../sectionsLoader/section_3.js";
 import { renderSection4 } from "../sectionsLoader/section_4.js";
 import { renderSection5 } from "../sectionsLoader/section_5.js";
 import { renderSection6 } from "../sectionsLoader/section_6.js";
+import { renderSection7 } from "../sectionsLoader/section_7.js";
 
 
 export async function renderHome(){
@@ -21,6 +22,8 @@ export async function renderHome(){
 
     await renderSection5();
 
-    await renderSection6();
+    await renderSection6(); // kinda empty until next update
+
+    await renderSection7();
     
 }

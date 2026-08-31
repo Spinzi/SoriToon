@@ -1,0 +1,236 @@
+@import url("../colours_pallete.css");
+
+.section_7 {
+    background: var(--bg-m-gradient-2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: var(--space-8) var(--space-5);
+    gap: var(--space-3);
+
+    position: relative;
+}
+
+.section_7 h3 {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 0 var(--space-5);
+
+    font-size: var(--space-8);
+    color: var(--primary);
+    text-align: center;
+}
+
+
+/* Q&A cards */
+
+.section_7 details {
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.38);
+
+    border: 2px solid color-mix(
+        in srgb,
+        var(--accent) 35%,
+        transparent
+    );
+
+    border-radius: var(--space-5);
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.25s cubic-bezier(.2, .8, .2, 1),
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.section_7 details:hover {
+    transform: translateY(-3px) rotate(-0.3deg);
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border-color: color-mix(
+        in srgb,
+        var(--accent) 65%,
+        transparent
+    );
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Question */
+
+.section_7 summary {
+    padding: var(--space-4) var(--space-5);
+
+    cursor: pointer;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+    color: var(--primary);
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+}
+
+.section_7 summary::-webkit-details-marker {
+    display: none;
+}
+
+.section_7 summary:hover {
+    color: var(--accent);
+}
+
+
+/* Plus button */
+
+.section_7 summary::after {
+    content: "+";
+
+    flex-shrink: 0;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    color: var(--accent);
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.2s ease;
+}
+
+.section_7 details[open] summary::after {
+    transform: rotate(135deg);
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Answer */
+
+.section_7 details p {
+    margin: 0;
+
+    padding:
+        0
+        var(--space-5)
+        var(--space-5);
+
+    font-size: var(--space-4);
+    line-height: 1.65;
+
+    color: var(--text);
+
+    animation: answerIn 0.3s ease;
+}
+
+@keyframes answerIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Open state */
+
+.section_7 details[open] {
+    background: rgba(255, 255, 255, 0.58);
+
+    border-color: color-mix(
+        in srgb,
+        var(--accent) 70%,
+        transparent
+    );
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .section_7 {
+        padding:
+            var(--space-7)
+            var(--space-3);
+    }
+
+    .section_7 h3 {
+        font-size: var(--space-7);
+        margin-bottom: var(--space-4);
+    }
+
+    .section_7 details {
+        max-width: 100%;
+        border-radius: var(--space-4);
+    }
+
+    .section_7 summary {
+        padding:
+            var(--space-3)
+            var(--space-4);
+
+        font-size: large;
+    }
+
+    .section_7 summary::after {
+        width: 28px;
+        height: 28px;
+        font-size: 21px;
+    }
+
+    .section_7 details p {
+        padding:
+            0
+            var(--space-4)
+            var(--space-4);
+
+        font-size: var(--space-3);
+        line-height: 1.55;
+    }
+
+    .section_7 details:hover {
+        transform: none;
+    }
+}

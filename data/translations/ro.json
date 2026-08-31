@@ -52,6 +52,24 @@
     "pageErr_btn": "Înapoi acasă",
 
     "comingSoon_h": "În curând",
-    "comingSoon_p": "Această funcție este încă în dezvoltare. Va fi disponibilă într-o versiune viitoare."
+    "comingSoon_p": "Această funcție este încă în dezvoltare. Va fi disponibilă într-o versiune viitoare.",
+
+    "s_7_h": "Întrebări frecvente",
+
+    "q_a_0_t": "Cât durează?",
+    "q_a_0_d": "În general, comanda durează aproximativ 2–3 zile, inclusiv livrarea. Pentru comenzile digitale, aceasta este de obicei gata în câteva ore.",
+
+    "q_a_1_t": "Ce fotografii sunt potrivite?",
+    "q_a_1_d": "Fotografiile trebuie să evidențieze cât mai bine subiectul și să fie cât mai clare posibil.",
+
+    "q_a_2_t": "Ce dimensiuni sunt disponibile?",
+    "q_a_2_d": "Sunt disponibile următoarele dimensiuni: [ ]",
+
+    "q_a_3_t": "Cum se plătește?",
+    "q_a_3_d": "Plata se face exclusiv prin transfer bancar.",
+
+    "q_a_4_t": "Pot cere modificări?",
+    "q_a_4_d": "Da, pot fi solicitate modificări înainte de imprimare. Veți fi anunțat atunci când comanda urmează să fie imprimată."
+
 
 }
